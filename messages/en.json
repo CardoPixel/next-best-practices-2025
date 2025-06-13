@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "welcome": "Welcome to ",
+    "description": "Your robust starting point for modern web applications, built with Next.js v15 App Router and the latest best practices for 2025. Accelerate your development with a pre-configured, scalable foundation.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "why": "Why this template?",
+    "reason1title": "Cutting-Edge Technologies",
+    "reason1description": "Leverage Next.js v15 with the App Router, TypeScript, and modern styling conventions for a powerful and efficient development experience.",
+    "reason2title": "Optimized for Performance",
+    "reason2description": "Built with performance in mind, ensuring fast load times and a smooth user experience right out of the box.",
+    "reason3title": "Best Practices Applied",
+    "reason3description": "Incorporates industry-standard best practices for code quality, project structure, accessibility, and maintainability.",
+    "reason4title": "Developer Friendly",
+    "reason4description": "Configured with ESLint and Prettier for consistent code style, absolute imports for cleaner paths, and clear environment setup."
+  }
+}
