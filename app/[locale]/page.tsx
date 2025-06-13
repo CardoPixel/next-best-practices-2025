@@ -1,8 +1,8 @@
 // /app/page.tsx
 
-import React from 'react';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 /**
  * Renders the main landing page of the next-best-practices-2025 template.
@@ -12,65 +12,75 @@ import { Link } from '@/i18n/navigation';
  * and calls to action, demonstrating a basic page structure.
  */
 export default function LocaleHomePage() {
-  const t = useTranslations();
+    const t = useTranslations();
 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-16 lg:p-24 bg-gray-50 text-gray-800">
-      <section className="text-center max-w-4xl px-4 py-12 bg-white rounded-xl shadow-lg border border-gray-200">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-blue-700 leading-tight mb-6 animate-fade-in-down">
-          {t("HomePage.welcome")} <br className="sm:hidden" />
-          <span className="bg-gradient-to-r from-blue-600 to-indigo-800 text-transparent bg-clip-text">
-            next-best-practices-2025
-          </span>
-        </h1>
+    return (
+        <main className="flex min-h-screen flex-col items-center justify-center bg-gray-50 p-4 text-gray-800 sm:p-8 md:p-16 lg:p-24">
+            <section className="max-w-4xl rounded-xl border border-gray-200 bg-white px-4 py-12 text-center shadow-lg">
+                <h1 className="animate-fade-in-down mb-6 text-4xl leading-tight font-extrabold text-blue-700 sm:text-5xl md:text-6xl">
+                    {t("HomePage.welcome")} <br className="sm:hidden" />
+                    <span className="bg-gradient-to-r from-blue-600 to-indigo-800 bg-clip-text text-transparent">
+                        next-best-practices-2025
+                    </span>
+                </h1>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed animate-fade-in-up delay-200">
-          {t("HomePage.description")}
-        </p>
+                <p className="animate-fade-in-up mb-10 text-lg leading-relaxed text-gray-600 delay-200 sm:text-xl md:text-2xl">
+                    {t("HomePage.description")}
+                </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-400">
-          <Link href="/dashboard" passHref>
-            <button className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-all duration-300 transform hover:scale-105">
-              {t("HomePage.getStarted")}
-            </button>
-          </Link>
-          <Link href="/about" passHref>
-            <button className="px-8 py-4 border border-blue-600 text-blue-600 font-semibold rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-all duration-300 transform hover:scale-105">
-              {t("HomePage.learnMore")}
-            </button>
-          </Link>
-        </div>
-      </section>
+                <div className="animate-fade-in-up flex flex-col items-center justify-center gap-4 delay-400 sm:flex-row">
+                    <Link href="/dashboard" passHref>
+                        <button className="focus:ring-opacity-75 transform rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                            {t("HomePage.getStarted")}
+                        </button>
+                    </Link>
+                    <Link href="/about" passHref>
+                        <button className="focus:ring-opacity-75 transform rounded-lg border border-blue-600 px-8 py-4 font-semibold text-blue-600 shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                            {t("HomePage.learnMore")}
+                        </button>
+                    </Link>
+                </div>
+            </section>
 
-      <section className="mt-20 px-4 max-w-4xl text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-8">{t("HomePage.why")}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">{t("HomePage.reason1title")}</h3>
-            <p className="text-gray-600">
-              {t("HomePage.reason1description")}
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">{t("HomePage.reason2title")}</h3>
-            <p className="text-gray-600">
-              {t("HomePage.reason2description")}
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">{t("HomePage.reason3title")}</h3>
-            <p className="text-gray-600">
-              {t("HomePage.reason3description")}
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">{t("HomePage.reason4title")}</h3>
-            <p className="text-gray-600">
-              {t("HomePage.reason4description")}
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
+            <section className="mt-20 max-w-4xl px-4 text-center">
+                <h2 className="mb-8 text-3xl font-bold text-gray-700 sm:text-4xl">
+                    {t("HomePage.why")}
+                </h2>
+                <div className="grid grid-cols-1 gap-8 text-left md:grid-cols-2">
+                    <div className="rounded-lg border border-gray-200 bg-white p-6 shadow">
+                        <h3 className="mb-2 text-xl font-semibold text-blue-600">
+                            {t("HomePage.reason1title")}
+                        </h3>
+                        <p className="text-gray-600">
+                            {t("HomePage.reason1description")}
+                        </p>
+                    </div>
+                    <div className="rounded-lg border border-gray-200 bg-white p-6 shadow">
+                        <h3 className="mb-2 text-xl font-semibold text-blue-600">
+                            {t("HomePage.reason2title")}
+                        </h3>
+                        <p className="text-gray-600">
+                            {t("HomePage.reason2description")}
+                        </p>
+                    </div>
+                    <div className="rounded-lg border border-gray-200 bg-white p-6 shadow">
+                        <h3 className="mb-2 text-xl font-semibold text-blue-600">
+                            {t("HomePage.reason3title")}
+                        </h3>
+                        <p className="text-gray-600">
+                            {t("HomePage.reason3description")}
+                        </p>
+                    </div>
+                    <div className="rounded-lg border border-gray-200 bg-white p-6 shadow">
+                        <h3 className="mb-2 text-xl font-semibold text-blue-600">
+                            {t("HomePage.reason4title")}
+                        </h3>
+                        <p className="text-gray-600">
+                            {t("HomePage.reason4description")}
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    );
 }

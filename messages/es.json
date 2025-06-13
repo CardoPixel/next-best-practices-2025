@@ -1,17 +1,17 @@
 {
-  "HomePage": {
-    "welcome": "Bienvenido a ",
-    "description": "Tu punto de partida robusto para aplicaciones web modernas, construido con Next.js v15 App Router y las últimas mejores prácticas para 2025. Acelera tu desarrollo con una base preconfigurada y escalable.",
-    "getStarted": "Comenzar",
-    "learnMore": "Aprende Más",
-    "why": "¿Por qué esta plantilla?",
-    "reason1title": "Tecnologías de Vanguardia",
-    "reason1description": "Aprovecha Next.js v15 con App Router, TypeScript y convenciones de estilo modernas para una experiencia de desarrollo potente y eficiente.",
-    "reason2title": "Optimizado para el Rendimiento",
-    "reason2description": "Construido pensando en el rendimiento, asegurando tiempos de carga rápidos y una experiencia de usuario fluida desde el inicio.",
-    "reason3title": "Mejores Prácticas Aplicadas",
-    "reason3description": "Incorpora las mejores prácticas estándar de la industria para la calidad del código, estructura del proyecto, accesibilidad y mantenibilidad.",
-    "reason4title": "Amigable para el Desarrollador",
-    "reason4description": "Configurado con ESLint y Prettier para un estilo de código consistente, importaciones absolutas para rutas más limpias y una configuración de entorno clara."
-  }
+    "HomePage": {
+        "welcome": "Bienvenido a ",
+        "description": "Tu punto de partida robusto para aplicaciones web modernas, construido con Next.js v15 App Router y las últimas mejores prácticas para 2025. Acelera tu desarrollo con una base preconfigurada y escalable.",
+        "getStarted": "Comenzar",
+        "learnMore": "Aprende Más",
+        "why": "¿Por qué esta plantilla?",
+        "reason1title": "Tecnologías de Vanguardia",
+        "reason1description": "Aprovecha Next.js v15 con App Router, TypeScript y convenciones de estilo modernas para una experiencia de desarrollo potente y eficiente.",
+        "reason2title": "Optimizado para el Rendimiento",
+        "reason2description": "Construido pensando en el rendimiento, asegurando tiempos de carga rápidos y una experiencia de usuario fluida desde el inicio.",
+        "reason3title": "Mejores Prácticas Aplicadas",
+        "reason3description": "Incorpora las mejores prácticas estándar de la industria para la calidad del código, estructura del proyecto, accesibilidad y mantenibilidad.",
+        "reason4title": "Amigable para el Desarrollador",
+        "reason4description": "Configurado con ESLint y Prettier para un estilo de código consistente, importaciones absolutas para rutas más limpias y una configuración de entorno clara."
+    }
 }

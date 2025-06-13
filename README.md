@@ -16,27 +16,27 @@
 
 ## ✨ Features
 
-* **Next.js v15 (App Router)**: Leverage the latest features and improved routing paradigm for robust applications.
-* **TypeScript**: Enjoy type safety and enhanced developer tooling for more reliable code.
-* **ESLint & Prettier**: Integrated for consistent code style and quality across your team.
-* **Atomic Design / Component-Based Architecture**: A structured approach to building scalable UIs.
-* **Environment Variables**: Secure and flexible configuration management.
-* **Absolute Imports**: Clean and easy-to-manage import paths.
-* **Error Handling**: Robust patterns for client-side and server-side error management.
-* **Performance Optimizations**: Built-in considerations for optimal loading and responsiveness.
-* **Accessibility (A11y) Focus**: Encourages building inclusive web experiences.
-* **Clear Folder Structure**: An intuitive and organized project layout for easy navigation.
-* **Localization**: Using next-intl for best developer experience in production.
+- **Next.js v15 (App Router)**: Leverage the latest features and improved routing paradigm for robust applications.
+- **TypeScript**: Enjoy type safety and enhanced developer tooling for more reliable code.
+- **ESLint & Prettier**: Integrated for consistent code style and quality across your team.
+- **Atomic Design / Component-Based Architecture**: A structured approach to building scalable UIs.
+- **Environment Variables**: Secure and flexible configuration management.
+- **Absolute Imports**: Clean and easy-to-manage import paths.
+- **Error Handling**: Robust patterns for client-side and server-side error management.
+- **Performance Optimizations**: Built-in considerations for optimal loading and responsiveness.
+- **Accessibility (A11y) Focus**: Encourages building inclusive web experiences.
+- **Clear Folder Structure**: An intuitive and organized project layout for easy navigation.
+- **Localization**: Using next-intl for best developer experience in production.
 
 ---
 
 ## 🛠️ Technologies Used
 
-* **Framework**: [Next.js](https://nextjs.org/)
-* **Language**: [TypeScript](https://www.typescriptlang.org/)
-* **Styling (Example)**: TailCSS / CSS Modules (or similar, depending on your choice)
-* **Linting**: [ESLint](https://eslint.org/)
-* **Formatting**: [Prettier](https://prettier.io/)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling (Example)**: TailCSS / CSS Modules (or similar, depending on your choice)
+- **Linting**: [ESLint](https://eslint.org/)
+- **Formatting**: [Prettier](https://prettier.io/)
 
 ---
 
@@ -129,12 +129,12 @@ next-best-practices-2025/
 
 We welcome contributions! If you have ideas for improvements or find any issues, please feel free to:
 
-* Fork this repository.
-* Create a new branch (git checkout -b feature/your-feature).
-* Make your changes.
-* Commit your changes (git commit -m 'feat: Add new feature').
-* Push to the branch (git push origin feature/your-feature).
-* Open a Pull Request.
+- Fork this repository.
+- Create a new branch (git checkout -b feature/your-feature).
+- Make your changes.
+- Commit your changes (git commit -m 'feat: Add new feature').
+- Push to the branch (git push origin feature/your-feature).
+- Open a Pull Request.
 
 ## 📄 License
 
@@ -142,7 +142,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-* Next.js Documentation
-* TypeScript Documentation
-* ESLint Documentation
-* Prettier Documentation
+- Next.js Documentation
+- TypeScript Documentation
+- ESLint Documentation
+- Prettier Documentation

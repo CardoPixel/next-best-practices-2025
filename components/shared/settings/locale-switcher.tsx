@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
-import { useLocale } from "next-intl";
+
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { useLocale } from "next-intl";
+import React from "react";
 
 export type Props = unknown;
 
@@ -29,20 +30,26 @@ export default function LocaleSwitcher() {
     };
 
     return (
-        <div className="bg-transparent flex flex-row gap-4 justify-end items-center h-fit py-2 px-4">
+        <div className="flex h-fit flex-row items-center justify-end gap-4 bg-transparent px-4 py-2">
             {languages.map((langData) => (
                 <div key={langData.locale}>
                     <button
-                        onClick={() => handleChange(langData.locale as (typeof routing.locales)[number])}
-                        className={`
-                                px-2 py-0.5 rounded
-                                ${currentLocale === langData.locale
-                                ? "border bg-gray-50 scale-120"
+                        onClick={() =>
+                            handleChange(
+                                langData.locale as (typeof routing.locales)[number],
+                            )
+                        }
+                        className={`rounded px-2 py-0.5 ${
+                            currentLocale === langData.locale
+                                ? "scale-120 border bg-gray-50"
                                 : "border-none"
-                            }
-                            `}
+                        } `}
                     >
-                        <span role="img" aria-label={langData.alt} className="text-2xl">
+                        <span
+                            role="img"
+                            aria-label={langData.alt}
+                            className="text-2xl"
+                        >
                             {langData.flagEmoji}
                         </span>
                     </button>

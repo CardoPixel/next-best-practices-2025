@@ -1,26 +1,27 @@
-import { getRequestConfig } from 'next-intl/server';
-import { hasLocale, Formats } from 'next-intl';
-import { routing } from './routing';
+import { Formats, hasLocale } from "next-intl";
+import { getRequestConfig } from "next-intl/server";
+
+import { routing } from "./routing";
 
 export const formats = {
     dateTime: {
         short: {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric'
-        }
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+        },
     },
     number: {
         precise: {
-            maximumFractionDigits: 5
-        }
+            maximumFractionDigits: 5,
+        },
     },
     list: {
         enumeration: {
-            style: 'long',
-            type: 'conjunction'
-        }
-    }
+            style: "long",
+            type: "conjunction",
+        },
+    },
 } satisfies Formats;
 
 export default getRequestConfig(async ({ requestLocale }) => {
@@ -32,6 +33,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
     return {
         locale,
-        messages: (await import(`@/messages/${locale}.json`)).default
+        messages: (await import(`@/messages/${locale}.json`)).default,
     };
 });
