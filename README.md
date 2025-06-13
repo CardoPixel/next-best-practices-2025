@@ -26,6 +26,7 @@
 * **Performance Optimizations**: Built-in considerations for optimal loading and responsiveness.
 * **Accessibility (A11y) Focus**: Encourages building inclusive web experiences.
 * **Clear Folder Structure**: An intuitive and organized project layout for easy navigation.
+* **Localization**: Using next-intl for best developer experience in production.
 
 ---
 
