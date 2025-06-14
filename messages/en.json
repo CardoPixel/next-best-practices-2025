@@ -13,5 +13,11 @@
         "reason3description": "Incorporates industry-standard best practices for code quality, project structure, accessibility, and maintainability.",
         "reason4title": "Developer Friendly",
         "reason4description": "Configured with ESLint and Prettier for consistent code style, absolute imports for cleaner paths, and clear environment setup."
+    },
+    "Theme": {
+        "toggleTheme": "Toggle theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
     }
 }

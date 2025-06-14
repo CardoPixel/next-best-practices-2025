@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useLocale } from "next-intl";
@@ -30,10 +31,11 @@ export default function LocaleSwitcher() {
     };
 
     return (
-        <div className="flex h-fit flex-row items-center justify-end gap-4 bg-transparent px-4 py-2">
+        <>
             {languages.map((langData) => (
                 <div key={langData.locale}>
-                    <button
+                    <Button
+                        variant={"default"}
                         onClick={() =>
                             handleChange(
                                 langData.locale as (typeof routing.locales)[number],
@@ -41,20 +43,20 @@ export default function LocaleSwitcher() {
                         }
                         className={`rounded px-2 py-0.5 ${
                             currentLocale === langData.locale
-                                ? "scale-120 border bg-gray-50"
-                                : "border-none"
+                                ? "scale-120"
+                                : "bg-transparent border"
                         } `}
                     >
                         <span
                             role="img"
                             aria-label={langData.alt}
-                            className="text-2xl"
+                            className="text-2xl font-emoji"
                         >
                             {langData.flagEmoji}
                         </span>
-                    </button>
+                    </Button>
                 </div>
             ))}
-        </div>
+        </>
     );
 }

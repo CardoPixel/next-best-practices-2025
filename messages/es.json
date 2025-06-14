@@ -13,5 +13,11 @@
         "reason3description": "Incorpora las mejores prácticas estándar de la industria para la calidad del código, estructura del proyecto, accesibilidad y mantenibilidad.",
         "reason4title": "Amigable para el Desarrollador",
         "reason4description": "Configurado con ESLint y Prettier para un estilo de código consistente, importaciones absolutas para rutas más limpias y una configuración de entorno clara."
+    },
+    "Theme": {
+        "toggleTheme": "Alternar tema",
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Automático"
     }
 }

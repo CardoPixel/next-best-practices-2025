@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 
 import "@/styles/globals.css";
 
+import { geistMono, geistSans, noto_color_emoji } from "@/app/fonts";
+import { LayoutHeader } from "@/components/shared/layout/header";
 import LocaleSwitcher from "@/components/shared/settings/locale-switcher";
+import { ModeToggle } from "@/components/shared/settings/mode-toggle";
 import { routing } from "@/i18n/routing";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { ThemeProvider } from "next-themes";
 import { notFound } from "next/navigation";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
     title: "Next.js Best Practices 2025",
@@ -38,13 +31,23 @@ export default async function LocaleLayout({
     }
 
     return (
-        <html lang={locale}>
+        <html lang={locale} suppressHydrationWarning>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${noto_color_emoji.variable} antialiased`}
             >
                 <NextIntlClientProvider>
-                    <LocaleSwitcher />
-                    {children}
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
+                        <LayoutHeader>
+                            <LocaleSwitcher />
+                            <ModeToggle />
+                        </LayoutHeader>
+                        {children}
+                    </ThemeProvider>
                 </NextIntlClientProvider>
             </body>
         </html>
