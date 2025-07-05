@@ -93,18 +93,17 @@ Open <http://localhost:3000> with your browser to see the result.
 ```bash
 next-best-practices-2025/
 ├── public/                 # Static assets (images, fonts, etc.)
-├── src/
-│   ├── app/                # Next.js App Router (pages, layouts, loading, error, etc.)
-│   │   ├── (auth)/         # Example of a route group for authentication
-│   │   ├── api/            # API routes
-│   │   └── layout.tsx      # Root layout
-│   ├── components/         # Reusable UI components (atoms, molecules, organisms, templates)
-│   │   ├── ui/             # Generic UI components (buttons, inputs)
-│   │   └── shared/         # Components used across multiple pages
-│   ├── lib/                # Utility functions, helper modules, data fetching
-│   ├── styles/             # Global styles, CSS variables
-│   ├── types/              # Global TypeScript types and interfaces
-│   └── hooks/              # Custom React hooks
+├── app/                    # Next.js App Router (pages, layouts, loading, error, etc.)
+│   ├── (auth)/             # Example of a route group for authentication
+│   ├── api/                # API routes
+│   └── layout.tsx          # Root layout
+├── components/             # Reusable UI components (atoms, molecules, organisms, templates)
+│   ├── ui/                 # Generic UI components (buttons, inputs)
+│   └── shared/             # Components used across multiple pages
+├── lib/                    # Utility functions, helper modules, data fetching
+├── styles/                 # Global styles, CSS variables
+├── types/                  # Global TypeScript types and interfaces
+├── hooks/                  # Custom React hooks
 ├── .env.example            # Example environment variables
 ├── .eslintrc.json          # ESLint configuration
 ├── .prettierrc             # Prettier configuration

@@ -1,4 +1,60 @@
 {
+    // General Editor Setting
+    "editor.guides.bracketPairs": true,
+    "editor.accessibilitySupport": "off",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.commandCenter": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Typescript
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    // Extensions
+    "extensions.ignoreRecommendations": false,
+    // Colorize
+    "colorize.languages": [
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "html",
+        "markdown"
+    ],
+    "colorize.include": [
+        "**/*.svg",
+        "**/*.xml",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.json",
+        "**/*.md",
+        "**/*.mdx",
+        "**/*.gpl",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "**/*.styl",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    // i18n-ally
+    "i18n-ally.enabledFrameworks": ["next-intl"],
     "i18n-ally.localesPaths": ["messages"],
     "i18n-ally.keystyle": "nested"
 }

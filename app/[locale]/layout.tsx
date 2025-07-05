@@ -11,8 +11,10 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import { notFound } from "next/navigation";
 
+const APP_FULL_NAME = process.env.APP_FULL_NAME;
+
 export const metadata: Metadata = {
-    title: "Next.js Best Practices 2025",
+    title: APP_FULL_NAME,
     description:
         "A comprehensive, opinionated Next.js v15 App Router template engineered to kickstart your web projects with the latest best practices for 2025.",
 };
@@ -35,7 +37,7 @@ export default async function LocaleLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} ${noto_color_emoji.variable} antialiased`}
             >
-                <NextIntlClientProvider>
+                <NextIntlClientProvider locale={locale}>
                     <ThemeProvider
                         attribute="class"
                         defaultTheme="system"

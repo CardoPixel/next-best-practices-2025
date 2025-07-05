@@ -19,5 +19,10 @@
         "light": "Claro",
         "dark": "Escuro",
         "system": "Sistema"
+    },
+    "NotFound": {
+        "title": "404 - Página não encontrada",
+        "description": "A página que você está procurando não foi encontrada.",
+        "backHome": "Voltar para ao Inicio"
     }
 }

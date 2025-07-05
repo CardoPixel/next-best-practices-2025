@@ -17,7 +17,7 @@ export default function LocaleHomePage() {
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-16 lg:p-24">
-            <section className="max-w-4xl rounded-xl border border-primary px-4 py-12 text-center shadow-lg">
+            <section className="max-w-4xl rounded-xl border border-primary px-4 py-12 text-center shadow-lg dark:shadow-primary">
                 <h1 className="animate-fade-in-down mb-6 text-xl leading-tight font-extrabold sm:text-5xl md:text-6xl">
                     {t("HomePage.welcome")} <br className="sm:hidden" />
                     <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -54,7 +54,7 @@ export default function LocaleHomePage() {
                     {t("HomePage.why")}
                 </h2>
                 <div className="grid grid-cols-1 gap-8 text-left md:grid-cols-2">
-                    <div className="rounded-lg border border-primary p-6 shadow">
+                    <div className="rounded-lg border border-primary p-6 shadow dark:shadow-primary">
                         <h3 className="mb-2 text-xl font-semibold text-primary">
                             {t("HomePage.reason1title")}
                         </h3>
@@ -62,7 +62,7 @@ export default function LocaleHomePage() {
                             {t("HomePage.reason1description")}
                         </p>
                     </div>
-                    <div className="rounded-lg border border-secondary p-6 shadow">
+                    <div className="rounded-lg border border-secondary p-6 shadow dark:shadow-secondary">
                         <h3 className="mb-2 text-xl font-semibold text-secondary">
                             {t("HomePage.reason2title")}
                         </h3>
@@ -70,7 +70,7 @@ export default function LocaleHomePage() {
                             {t("HomePage.reason2description")}
                         </p>
                     </div>
-                    <div className="rounded-lg border border-primary p-6 shadow">
+                    <div className="rounded-lg border border-primary p-6 shadow dark:shadow-primary">
                         <h3 className="mb-2 text-xl font-semibold text-primary">
                             {t("HomePage.reason3title")}
                         </h3>
@@ -78,7 +78,7 @@ export default function LocaleHomePage() {
                             {t("HomePage.reason3description")}
                         </p>
                     </div>
-                    <div className="rounded-lg border border-secondary p-6 shadow">
+                    <div className="rounded-lg border border-secondary p-6 shadow dark:shadow-secondary">
                         <h3 className="mb-2 text-xl font-semibold text-secondary">
                             {t("HomePage.reason4title")}
                         </h3>

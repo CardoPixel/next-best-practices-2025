@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "vivaxy.vscode-conventional-commits",
+        "oderwat.indent-rainbow",
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-yaml",
+        "codezombiech.gitignore",
+        "lokalise.i18n-ally",
+        "bierner.markdown-emoji",
+        "bierner.markdown-footnotes",
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-mermaid",
+        "bierner.markdown-checkbox",
+        "bierner.markdown-yaml-preamble",
+        "mikestead.dotenv",
+        "christian-kohler.path-intellisense",
+        "wix.vscode-import-cost",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode"
+    ]
+}

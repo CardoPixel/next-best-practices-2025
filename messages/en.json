@@ -19,5 +19,10 @@
         "light": "Light",
         "dark": "Dark",
         "system": "System"
+    },
+    "NotFound": {
+        "title": "404 - Page Not Found",
+        "description": "The page you're looking for doesn't exist.",
+        "backHome": "Back to Home"
     }
 }
