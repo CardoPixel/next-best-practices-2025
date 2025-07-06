@@ -16,6 +16,7 @@
         "christian-kohler.path-intellisense",
         "wix.vscode-import-cost",
         "bradlc.vscode-tailwindcss",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "kamikillerto.vscode-colorize"
     ]
 }

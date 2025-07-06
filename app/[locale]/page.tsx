@@ -1,5 +1,3 @@
-// /app/page.tsx
-
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
@@ -48,7 +46,6 @@ export default function LocaleHomePage() {
                     </Button>
                 </div>
             </section>
-
             <section className="mt-20 max-w-4xl px-4 text-center">
                 <h2 className="mb-8 text-3xl font-bold sm:text-4xl bg-gradient-to-l from-secondary to-primary bg-clip-text text-transparent">
                     {t("HomePage.why")}

@@ -24,5 +24,38 @@
         "title": "404 - Page Not Found",
         "description": "The page you're looking for doesn't exist.",
         "backHome": "Back to Home"
+    },
+    "Dashboard": {
+        "title": "Component Dashboard",
+        "description": "Explore all available UI components and their variants"
+    },
+    "About": {
+        "title": "Full Stack Developer",
+        "description": "Passionate developer with expertise in modern web technologies and best practices",
+        "name": "Cardo",
+        "aboutMe": {
+            "title": "About Me",
+            "content": "I'm a passionate full-stack developer with over 5 years of experience building modern web applications. I specialize in React, Next.js, TypeScript, and Node.js, with a focus on creating scalable, maintainable, and user-friendly solutions."
+        },
+        "experience": {
+            "title": "Experience",
+            "current": "Leading development of enterprise applications with focus on performance and scalability",
+            "previous": "Built and maintained multiple client projects using modern web technologies"
+        },
+        "education": {
+            "title": "Education"
+        },
+        "projects": {
+            "title": "Projects",
+            "template": "A comprehensive Next.js template with best practices for 2025",
+            "ecommerce": "Full-stack e-commerce platform with payment integration",
+            "taskapp": "Real-time task management application with collaborative features"
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Get in touch for collaborations or questions",
+            "email": "Email",
+            "location": "Location"
+        }
     }
 }
