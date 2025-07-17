@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+
+# Command Execution Policy
+
+Never try to run any commands directly.
+
+Instead, always tell the user what command to run and what to expect as the
+output of the command. description: globs: alwaysApply: false
+
+---

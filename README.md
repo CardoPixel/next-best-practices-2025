@@ -145,3 +145,19 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - TypeScript Documentation
 - ESLint Documentation
 - Prettier Documentation
+
+## 📚 Documentation
+
+All project documentation is now located in the [/docs](./docs) directory. This includes:
+
+- Features and route guides
+- Component documentation
+- API documentation
+- Architecture decisions
+- Setup and deployment instructions
+- Internationalization (i18n)
+- Types and interfaces
+- Utilities and hooks
+- Styles
+
+Refer to the [docs/README.md](./docs/README.md) for a full overview of the documentation structure.
